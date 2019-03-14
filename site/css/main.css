@@ -1,6 +1,4 @@
 body{
-    background-color: lightgray;
-    /* width: 100vw; */
     height: 100vh;
     margin: 0;
 }
@@ -16,15 +14,13 @@ header{
 }
 
 .header_bild{
-    background-color: green;
+    background-image: url(../../psd/header.375x300.mobil.jpg);
     width: 100%;
     height: 300px;
 }
 
 .main{
-    background-color: lightgray;
     width: 80%;
-    /* height: 500px; */
     margin: auto;
 }
 
@@ -43,6 +39,7 @@ header{
     width: 90%;
     height: 200px;
     margin: auto;
+    
 }
 
 .footer{
@@ -53,9 +50,88 @@ header{
 
 }
 
-i{
+i.material-icons{
     size: 50px;
+    font-size: 50px;
    
 
 
+}
+
+.nav{
+    width: 200px;
+    height: 300px;
+    background-color: lightblue;
+    z-index: 10;
+    top: 0;
+    position: fixed;
+    left: -100%;
+    transition: left 0.7s;
+}
+
+.activate{
+    left: 0;
+}
+
+ul{
+    margin: 15px;
+    font-size: 27px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    color: white;
+}
+
+.vara{
+    background-color: lightgreen;
+    height: 30px;
+    width: 180px;
+    border-radius: 50%;
+    text-align: center;
+    margin: auto;
+   
+}
+
+.antal{
+    background-color: green;
+    height: 30px;
+    width: 200px;
+    margin: auto;
+    z-index: 10;
+    left: -100%;
+}
+
+.varukorg{
+    background-color: aquamarine;
+    width: 300px;
+    height: 500px;
+}
+
+.kundvangn{
+    position: absolute;
+    right: 100px;
+    
+}
+
+h4{
+    text-align: center;
+}
+
+.logo{
+    width: 380px;
+    text-align: center;
+
+}
+
+@media only screen and (min-device-width: 768px) and (max-sevice-width: 1024px){
+
+    .nav{
+        height: 500px;
+    }
 }

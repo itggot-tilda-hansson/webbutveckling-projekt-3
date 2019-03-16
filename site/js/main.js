@@ -4,8 +4,38 @@ function menu (event){
     menu.classList.toggle("activate")
 }
 
-function vara (event){
+// function vara (event){
 
-    let vara = document.querySelector(".antal")
-    // vara.classList.toggle("activate_vara")
+//     let vara = document.querySelector(".vara")
+//     vara.classList.toggle("activate_vara")
+// }
+
+function antal1(){
+    document.getElementById("antal1").classList.toggle("show")
+
+}
+
+function antal2(){
+    document.getElementById("antal2").classList.toggle("show")
+
+}
+
+function antal3(){
+    document.getElementById("antal3").classList.toggle("show")
+
+}
+
+function antal4(){
+    document.getElementById("antal4").classList.toggle("show")
+
+}
+
+function antal5(){
+    document.getElementById("antal5").classList.toggle("show")
+
+}
+
+function antal6(){
+    document.getElementById("antal6").classList.toggle("show")
+
 }

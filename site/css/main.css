@@ -9,6 +9,7 @@ header{
     height: 100px;
     position: fixed;
     display: flex;
+    
 
 
 }
@@ -37,7 +38,7 @@ header{
 .text{
     background-color: lightcoral;
     width: 90%;
-    height: 200px;
+    height: 250px;
     margin: auto;
     
 }
@@ -54,8 +55,11 @@ i.material-icons{
     size: 50px;
     font-size: 50px;
    
+}
 
-
+p{
+    margin: 20px;
+    
 }
 
 .nav{
@@ -70,6 +74,10 @@ i.material-icons{
 }
 
 .activate{
+    left: 0;
+}
+
+.activate_vara{
     left: 0;
 }
 
@@ -92,7 +100,7 @@ a:hover{
     background-color: lightgreen;
     height: 30px;
     width: 180px;
-    border-radius: 50%;
+    border-radius: 10px;
     text-align: center;
     margin: auto;
    
@@ -103,8 +111,10 @@ a:hover{
     height: 30px;
     width: 200px;
     margin: auto;
-    z-index: 10;
-    left: -100%;
+    margin-top: 10px;
+    z-index: 1;
+    left: -1000px;
+    position: relative;
 }
 
 .varukorg{
@@ -129,9 +139,60 @@ h4{
 
 }
 
-@media only screen and (min-device-width: 768px) and (max-sevice-width: 1024px){
+.show{
+    left: 0;
+}
+
+#apple1{
+    background-image: url(../../psd/äpple1_240x200_mobil.jpg)
+}
+
+#apple2{
+    background-image: url(../../psd/apple2_240x200_mobil.jpg)
+}
+
+#apple3{
+    background-image: url(../../psd/apple3.2_240_200_mobil.jpg)
+}
+
+#apple4{
+    background-image: url(../../psd/apple4_240x200_mobil.jpg)
+}
+
+
+
+@media only screen and (min-device-width: 1024px){
+
+    .header_bild{
+        background-image: none;
+        background-image: url(../../psd/appleheader_1022x300_webb.jpg)
+    }
+
+    .kundvangn{
+        right: 400px;
+    }
+
+    .main{
+        grid-template-columns: 300px 20px 500px auto;
+        grid-template-areas: 
+        "apple1 . text1 ."
+    }
+
+    #apple{
+        grid-area: apple1;
+    }
+
+    #text1{
+        grid-area: text1;
+    }
 
     .nav{
-        height: 500px;
+        left: 0;
+        height: 400px;
+        width: 270px;
+        position: absolute;
+        top: 320px;
+        /* position: unset; */
+
     }
 }

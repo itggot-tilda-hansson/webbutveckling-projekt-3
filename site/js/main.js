@@ -4,11 +4,7 @@ function menu (event){
     menu.classList.toggle("activate")
 }
 
-// function vara (event){
 
-//     let vara = document.querySelector(".vara")
-//     vara.classList.toggle("activate_vara")
-// }
 
 function antal1(){
     document.getElementById("antal1").classList.toggle("show")
@@ -39,3 +35,8 @@ function antal6(){
     document.getElementById("antal6").classList.toggle("show")
 
 }
+
+document.getElementById("antal1").addEventListener("click",function(){
+    alert("Är du säker att du vill lägga till varan i kundvangnen");
+
+});

@@ -42,6 +42,7 @@ header{
     width: 90%;
     height: 250px;
     margin: auto;
+    border-radius: 10px;
     
 }
 
@@ -180,27 +181,50 @@ h4{
 
 @media only screen and (min-device-width: 1024px){
 
-    .header_bild{
-        background-image: none;
-        background-image: url(../../psd/appleheader_1263x300_webb.jpg)
+    #ta_bort{
+        visibility: hidden;
+
     }
 
+    .header_bild{
+        background-image: none;
+        background-image: url(../../psd/appleheader_1263x300_webb.jpg);
+    }
+
+  
     .kundvangn{
-        right: 400px;
+        margin-left: 100px;
+    }
+
+    .logo{
+        font-size: 30px;
+        margin: auto;
+    }
+
+    .text{
+        margin: 30px;
+        height: 200px;
+
+        
     }
 
     .main{
-        grid-template-columns: 300px 500px auto;
-        grid-template-rows: 100px 200px auto;
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: 250px 200px 500px;
+        grid-template-rows: 200px 30px 200px 30px 200px 30px 200px 30px 200px 30px 200px;
         grid-template-areas: 
-        "header header header"
-        "nav haeder_bild header_bild"
-        "apple1 text1 text1"
-    }
-
-    .apple{
-        width: 240px;
-        /* margin-left: 500px; */
+        "apple1 . text1"
+        ". . ."
+        "apple2 . text2"
+        ". . ."
+        "apple3 . text3"
+        ". . ."
+        "apple4 . text4"
+        ". . ."
+        "apple5 . text5"
+        ". . ."
+        "apple6 . text6"
     }
 
 
@@ -208,22 +232,118 @@ h4{
         grid-area: apple1;
     }
 
-    .apple{
-        background-repeat: repeat-y;
+    #apple2{
+        grid-area: apple2;
     }
+
+    #apple3{
+        grid-area: apple3;
+    }
+
+    #apple4{
+        grid-area: apple4;
+    }
+
+    #apple5{
+        grid-area: apple5;
+    }
+
+    #apple6{
+        grid-area: apple6;
+    }
+
+    
 
     #text1{
         grid-area: text1;
     }
 
+    #text2{
+        grid-area: text2;
+    }
+
+    #text3{
+        grid-area: text3;
+    }
+
+    #text4{
+        grid-area: text4;
+    }
+
+    #text5{
+        grid-area: text5;
+    }
+
+    #text6{
+        grid-area: text6;
+    }
+
+
+
+    .apple{
+        background-repeat: repeat-y;
+        width: 240px;
+        
+    }
+
+
     .nav{
         left: 0;
-        height: 530px;
-        width: 270px;
+        height: 70px;
+        width: 1700px;
         top: 100px;
-        /* position: absolute; */
-        /* top: 100px; */
-        /* position: unset; */
+        justify-content: center;
+        display: flex;
 
     }
+
+    ul{
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        list-style: none;
+    }
+
+    li{
+        float: left;
+    }
+
+    li a{
+        display: block;
+        padding: 16px;
+    }
+
+    .fakta{
+        width: 500px;
+    }
+
+    .bilder{
+        background-color: coral;
+        width: 1000px;
+        height: 1400px;
+        margin-top: 100px;
+        grid-gap: 30px;
+        grid-template-columns: 200px 200px;
+        grid-template-rows: 200px 200px 200px;
+        grid-template-areas: 
+        "bild1 bild2"
+        
+
+
+    }
+
+    .bild{
+        background-color: aquamarine;
+        width: 100px;
+        height: 100px;
+    }
+
+    #bild1{
+        grid-area: bild1;
+    }
+
+    #bild2{
+        grid-area: bild2;
+    }
+
 }

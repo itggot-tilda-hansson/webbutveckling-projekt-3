@@ -177,6 +177,83 @@ h4{
     background-image: url(../../psd/apple6_240x200_mobil.jpg)
 }
 
+.din_varukorg{
+    background-color: gray;
+    width: 300px;
+    height: 70px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+}
+
+.varukorg_vara{
+    background-color: lightcyan;
+    width: 250px;
+    height: 50px;
+    margin: auto;
+    margin-top: 20px;
+    /* grid-template-columns: auto 100px;
+    grid-template-areas: 
+    ". pris1" */
+
+}
+
+/* .pris{
+    background-color: lightgreen;
+    /* height: 50px;
+    width: 100px;
+    margin-left: 150px; */
+    /* margin-bottom: 70px; */
+    /* position: relative; */
+    /* grid-area: pris; */
+
+} */
+
+/* #pris1{
+    grid-area: pris1;
+} */
+
+h3{
+    text-align: center;
+}
+
+#main_bilder{
+    /* background-color: aqua; */
+    /* width: 300px;
+    height: 1000px; */
+}
+
+.bild{
+    background-color: blueviolet;
+    width: 300px;
+    height: 450px;
+    margin-top: 20px;
+}
+
+.apple_text{
+    background-color: rgba(0, 0, 0, 0.705);
+    width: 300px;
+    height: 50px;
+    position: relative;
+    top: 400px;
+    
+}
+
+#bild1_apple{
+    background-image: url(../../psd/apple_bild300x450.jpg)
+}
+
+#bild2_apple{
+    background-image: url(../../psd/apple_bild1_300x450.jpg)
+}
+
+#bild3_apple{
+    background-image: url(../../psd/apple_bild2_300x450.jpg)
+}
+
+#bild4_apple{
+    background-image: url(../../psd/apple_bild3_300x450.jpg)
+}
 
 
 @media only screen and (min-device-width: 1024px){
@@ -318,32 +395,43 @@ h4{
     }
 
     .bilder{
-        background-color: coral;
+        /* background-color: coral; */
         width: 1000px;
         height: 1400px;
-        margin-top: 100px;
-        grid-gap: 30px;
-        grid-template-columns: 200px 200px;
-        grid-template-rows: 200px 200px 200px;
+        /* margin-top: 100px; */
+        margin: auto;
+        grid-gap: 30px; 
+        display: grid;
+        grid-template-columns: 300px 300px;
+        grid-template-rows: 450px 450px;
         grid-template-areas: 
         "bild1 bild2"
+        "bild3 bild4"
         
 
 
     }
 
     .bild{
-        background-color: aquamarine;
-        width: 100px;
-        height: 100px;
+        /* background-color: aquamarine; */
+        width: 300px;
+        height: 450px;
     }
 
-    #bild1{
+    #bild1_apple{
         grid-area: bild1;
     }
 
-    #bild2{
+    #bild2_apple{
         grid-area: bild2;
+    }
+
+    #bild3_apple{
+        grid-area: bild3;
+    }
+
+    #bild_apple{
+        grid-area: bild4;
     }
 
 }
